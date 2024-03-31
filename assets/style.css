@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* 全体設定 */
 html,
 body,
 header {
@@ -9,6 +10,22 @@ html {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+padding:0 32px;
+border-bottom: 2px solid lightgray;
+}
+img {
+  border-radius: 8px;
+}
+.title{
+  width: 88%;
+  margin: 0 auto;
+}
+/* ヘッダー */
 .header {
   margin: 0;
   padding: 0;
@@ -35,6 +52,11 @@ html {
   color: black;
   font-weight: bold;
 }
+li:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: red;
+}
 .header a {
   text-decoration: none;
 }
@@ -44,27 +66,8 @@ html {
   text-align: center;
   padding-top:16px;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-h2 {
-padding:0 32px;
-border-bottom: 2px solid lightgray;
-}
-.title{
-  width: 88%;
-  margin: 0 auto;
-}
-img {
-  border-radius: 8px;
-}
-li:hover {
-  transition: 0.3s;
-  cursor: pointer;
-  color: red;
-}
 
+/* スライド */
 .slide-wrapper {
   width: 100%;
   height: 400px;
@@ -91,16 +94,10 @@ li:hover {
   align-items: center;
 }
 .slide1 {
-  /* スライドさせるために必要なクラス */
   transform: translateX(0);
 }
 .slide2 {
-  /* スライドさせるために必要なクラス */
   transform: translateX(-50%);
-}
-
-.thumbnail.active {
-  flex: 1;
 }
 button {
   padding: 0;
@@ -159,11 +156,15 @@ button {
   background-color: #000;
 }
 
+
+/* トピック */
+
 .container {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
+
 .articles {
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +187,9 @@ button {
   margin: 0;
   margin: 8px;
 }
+
+
+/* ゲームソフト */
 .gamesoft {
   display: flex;
   flex-wrap: wrap;
@@ -204,17 +208,38 @@ button {
 .soft.none {
   display: none;
 }
+
+
+/* 更新情報 */
 .update {
   text-align: center;
   margin: 32px 64px;
 }
-.breadcrumb {
+
+/* フッター */
+footer{
+  width: 100%;
+  height: 100px;
+  display: flex; 
+  margin: 0 auto;
   background-color: red;
-  height: 80px;
-  color: white;
+  color:white;
+  font-size: 24px;
   font-weight: bold;
+  text-align: center;
+  padding :0;
+  justify-content: center;
+ align-items: center;
+
 }
+
 @media (max-width: 800px) {
+  .header{
+    display: block;
+  }
+  .header li{
+    font-size: 12px;
+  }
   .article {
     width: calc(90% / 3);
     margin: 0 auto;
