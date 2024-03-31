@@ -187,6 +187,12 @@ button {
   margin: 0;
   margin: 8px;
 }
+.article p{
+  padding:0 16px;
+}
+.article img:hover{
+ filter:brightness(1.1)
+}
 
 
 /* ゲームソフト */
@@ -203,7 +209,13 @@ button {
 .soft img {
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+}
+.soft img:hover{
+  filter:brightness(1.1)
+ }
+.soft p{
+  padding: 0 16px;
 }
 .soft.none {
   display: none;
@@ -215,6 +227,7 @@ button {
   text-align: center;
   margin: 32px 64px;
 }
+
 
 /* フッター */
 footer{
