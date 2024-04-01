@@ -15,13 +15,13 @@ a {
   color: black;
 }
 h2 {
-padding:0 32px;
-border-bottom: 2px solid lightgray;
+  padding: 0 32px;
+  border-bottom: 2px solid lightgray;
 }
 img {
   border-radius: 8px;
 }
-.title{
+.title {
   width: 88%;
   margin: 0 auto;
 }
@@ -44,7 +44,6 @@ img {
   display: flex;
   justify-content: center;
   list-style: none;
-
 }
 .header li {
   margin: 16px;
@@ -60,11 +59,11 @@ li:hover {
 .header a {
   text-decoration: none;
 }
-#icon{
-  width:24px;
+#icon {
+  width: 24px;
   height: 24px;
   text-align: center;
-  padding-top:16px;
+  padding-top: 16px;
 }
 
 /* スライド */
@@ -156,8 +155,7 @@ button {
   background-color: #000;
 }
 
-
-/* トピック */
+/* トピックス */
 
 .container {
   width: 100%;
@@ -187,13 +185,12 @@ button {
   margin: 0;
   margin: 8px;
 }
-.article p{
-  padding:0 16px;
+.article p {
+  padding: 0 16px;
 }
-.article img:hover{
- filter:brightness(1.1)
+.article img:hover {
+  filter: brightness(1.2);
 }
-
 
 /* ゲームソフト */
 .gamesoft {
@@ -211,16 +208,15 @@ button {
   margin: 0 auto;
   width: 100%;
 }
-.soft img:hover{
-  filter:brightness(1.1)
- }
-.soft p{
+.soft img:hover {
+  filter: brightness(1.2);
+}
+.soft p {
   padding: 0 16px;
 }
 .soft.none {
   display: none;
 }
-
 
 /* 更新情報 */
 .update {
@@ -228,33 +224,98 @@ button {
   margin: 32px 64px;
 }
 
-
 /* フッター */
-footer{
+footer {
   width: 100%;
   height: 100px;
-  display: flex; 
+  display: flex;
   margin: 0 auto;
   background-color: red;
-  color:white;
+  color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  padding :0;
+  padding: 0;
   justify-content: center;
- align-items: center;
-
+  align-items: center;
 }
 
-@media (max-width: 800px) {
-  .header{
+/* トピック */
+.topic-container {
+  width: 100%;
+  display: flex;
+}
+.box-left {
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+.text {
+margin: 0 auto;
+width: 70%;
+}
+
+.box-left img {
+  width: 70%;
+  height: auto;
+}
+#new-title {
+  border-bottom: 1px solid lightgray;
+}
+.box-right {
+  width: 20%;
+  height: auto;
+  border: 2px solid lightgray;
+  padding:16px;
+}
+
+.new-article {
+  border-bottom: 1px solid lightgray;
+  padding: 16px 0;
+  margin: 0;
+  display: flex;
+}
+.new-article img {
+  width: 90px;
+  height: 90px;
+  vertical-align: middle;
+}
+.new-article p {
+  margin: 0;
+  padding: 8px;
+}
+
+@media (max-width: 1000px) {
+  .header {
     display: block;
   }
-  .header li{
+  .header h1 {
+    text-align: center;
+  }
+  .header li {
     font-size: 12px;
   }
   .article {
-    width: calc(90% / 3);
+    width: calc(100% / 2);
     margin: 0 auto;
   }
+  .topic-container {
+    display: block;
+  }
+  .box-left {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .box-right {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
 }
