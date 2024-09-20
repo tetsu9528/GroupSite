@@ -191,6 +191,14 @@ button {
 .article img:hover {
   filter: brightness(1.2);
 }
+#game{
+  display: block;
+  text-align: center;
+}
+.box-left{
+  display: block;
+  text-align: center;
+}
 
 /* ゲームソフト */
 .gamesoft {
@@ -246,7 +254,7 @@ footer {
   display: flex;
 }
 .box-left {
-  width: 60%;
+  width: 100%;
   height: auto;
   text-align: center;
 }
