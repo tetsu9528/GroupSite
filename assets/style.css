@@ -251,11 +251,12 @@ footer {
 /* トピック */
 .topic-container {
   width: 100%;
-  display: flex;
 }
-.box-left {
-  width: 100%;
+.content {
+  display: block;
+  width: 80%;
   height: auto;
+  margin:16px auto;
   text-align: center;
 }
 h3 {
@@ -263,6 +264,9 @@ h3 {
   font-size: 32px;
   margin: 0;
   padding: 0;
+}
+#arasuzi{
+  border:none;
 }
 .text {
   margin: 0 auto;
