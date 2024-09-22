@@ -191,9 +191,10 @@ button {
 .article img:hover {
   filter: brightness(1.2);
 }
-#game{
+.gamebox{
   display: block;
   text-align: center;
+  padding:64px;
 }
 .box-left{
   display: block;
